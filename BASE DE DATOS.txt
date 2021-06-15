@@ -1,0 +1,25 @@
+
+CREATE DATABASE alumno;
+use  alumno;
+
+create TABLE ALUMNOS
+(id int PRIMARY KEY NOT NULL,  
+   Nombre varchar(25) NOT NULL,
+ 	  apellido_p varchar(25) NOT NULL,
+ 		  apellido_m varchar(25) NOT NULL
+ 	
+   )  
+   
+   INSERT INTO ALUMNOS (id, Nombre,apellido_p, apellido_m)  
+    VALUES (1, 'daniel','gonzales', 'Fcruz') ; 
+    
+     INSERT into ALUMNOS (id, Nombre,apellido_p, apellido_m)  
+    VALUES (2, 'ariel','gonzales', 'cruz') ; 
+    
+     INSERT into ALUMNOS (id, Nombre,apellido_p, apellido_m)  
+    VALUES (3, 'daniela','hernandez', 'cruz') ;
+    
+    
+    
+    
+    SELECT id, Nombre FROM ALUMNOS;
